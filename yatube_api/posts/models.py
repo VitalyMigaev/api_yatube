@@ -81,4 +81,4 @@ class Comment(models.Model):
         return (
             f'Комментарий от {self.author}'
             f'к посту "{self.post}" - {self.text[:MAX_LENGTH_FOR_STR]}'
-            )
+        )
