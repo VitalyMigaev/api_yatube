@@ -1,9 +1,9 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 
-User = get_user_model()
+from posts.constants import MAX_LENGTH_FOR_STR
 
-MAX_LENGTH_FOR_STR = 30
+User = get_user_model()
 
 
 class Group(models.Model):
